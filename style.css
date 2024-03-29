@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  background-color: linear-gradient(to left, red, blue);
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  /*  */
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1,
+h2 {
+  background-color: #eee;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(0, 140, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  width: 200px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#category-select,
+#amount-input,
+#date-input {
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #23a6d5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border: solid 2px #eee;
+  outline: none;
+  font-size: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.input-section input[type="number"],
+.input-section input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.input-section button {
+  padding: 5px 10px;
+  background-color: #0073ff;
+  padding: 10px 30px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  border: solid 1px white;
+  transition: 0.15s;
+}
+
+.input-section button:active {
+  background-color: blue;
+}
+
+.expenses-list {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+  color: black;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #f72010;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* @media (max-width: 768px) {
+  h1,
+  h2 {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-section label {
+    margin-bottom: 5px;
+  }
+
+  .expenses-list {
+    margin: 10px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+} */
